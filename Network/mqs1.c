@@ -22,7 +22,12 @@ void rv(char *s)
     int j = strlen(s) - 1;
     while (i < j)
     {
-        swap(s[i++], s[j--]);
+        //swap(s[i++], s[j--]);
+        char t = s[i];
+    	s[i] = s[j];
+    	s[j] = t;
+    	i++;
+    	j--;
     }
 }
 void dtob(int n, char *s)
