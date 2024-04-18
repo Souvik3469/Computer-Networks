@@ -1,11 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h>
-#include<sys/un.h>
-#include<sys/types.h>
-#include<sys/types.h>
 #include<unistd.h>
-#include<sys/socket.h>
+#include<arpa/inet.h>
+#include<netinet/in.h>
+#include<string.h>
+#include<stdbool.h>
+#include<math.h>
+#include<pthread.h>
 
-#define SOCKET_PATH "/tmp/mySocket"
-#define BUFF_SIZE 30
+#define S_PORT_NO 7000
+#define D_PORT_NO 7001
+#define MAX 100
+#define ip "127.0.0.1"
+
+int ss;
+bool chat_active=true;
+struct sockaddr_in caddr;
+
