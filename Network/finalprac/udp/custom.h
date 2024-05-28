@@ -9,6 +9,8 @@
 #include<arpa/inet.h>
 #include<netinet/in.h>
 #include<sys/socket.h>
+#include<math.h>
+
 
 #define MAX 1024
 #define PORT 8000

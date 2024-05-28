@@ -8,8 +8,8 @@
 #include<math.h>
 #include<pthread.h>
 
-#define S_PORT_NO 7000
-#define D_PORT_NO 7001
+#define S_PORT_NO 7004
+#define D_PORT_NO 7005
 #define MAX 100
 #define ip "127.0.0.1"
 
